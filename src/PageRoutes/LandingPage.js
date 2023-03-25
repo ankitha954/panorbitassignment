@@ -4,9 +4,9 @@ import ProfileData from "../Components/ProfileData";
 
 const LandingPage = () => {
   return (
-    <div className={style.landingMain}>
-      <div className={style.card}>
-        <h1 className={style.card_top}>Select an account</h1>
+    <div className={style.landingcontainer}>
+      <div className={style.box}>
+        <h1 className={style.heading}>Select an account</h1>
         <ProfileData />
       </div>
     </div>

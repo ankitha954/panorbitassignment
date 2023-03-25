@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import ProfileData from "../Components/ProfileData";
 import { ContextApi } from "../UserContext/ContextProvider";
-import style from "../Design/ProfileData.module.css";
+import style from "../Design/ProfileDetails.module.css";
 
 const ProfileDetails = () => {
   const { profileData, setShowProfile, showProfile } = useContext(ContextApi); 

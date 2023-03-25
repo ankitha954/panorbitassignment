@@ -17,7 +17,7 @@ const HomePage = () => {
   useEffect(() => {
     let ID = sessionStorage.getItem("id") || 1;
     getFilterData(ID);
-  }, [id]);
+  }, [id,getFilterData]);
 
   return (
     <div>

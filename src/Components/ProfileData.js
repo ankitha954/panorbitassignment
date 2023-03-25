@@ -20,7 +20,7 @@ const ProfileData = () => {
               to={`/homepage/${element.id}`}
             >
               <div className={style.profileimagecontainer}>
-                <img src={element.profilepicture} alt="profile image" />
+                <img src={element.profilepicture} alt="profile" />
                 <p>{element.name}</p>
               </div>
             </NavLink>

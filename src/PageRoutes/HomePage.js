@@ -21,13 +21,13 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className={style.HomeMain}>
+      <div className={style.containerhome}>
         <Sidebar />
         {profileData &&
           profileData.map((el) => (
             <div
               style={{ width: "80%" }}
-              className={style.profile_top}
+              className={style.homeprofile}
               key={el.id}
             >
               <div className={style.profile}>

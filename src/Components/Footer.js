@@ -15,11 +15,11 @@ const Footer = (props) => {
   } = props;
 
   return (
-    <div className={style.mainDiv}>
-      <div className={style.leftSide}>
+    <div className={style.maincontainer}>
+      <div className={style.imageframe}>
         <img src={profilepicture} alt="profile img" />
         <p>{name}</p>
-        <div className={style.userName}>
+        <div className={style.profilename}>
           <div>
             <h2 style={{ marginTop: "0px" }}>Username :</h2>
             <h2>e-mail :</h2>
@@ -72,14 +72,6 @@ const Footer = (props) => {
           src={`https://maps.google.com/maps?q=${address.street},t=&z=13&ie=UTF8&iwloc=&output=embed`}
         
         ></iframe>
-        <div className={style.geo}>
-          <p>
-            Lat : <span>{address.geo.lat}</span>
-          </p>
-          <p>
-            Lng : <span>{address.geo.lng}</span>
-          </p>
-        </div>
       </div>
     </div>
   );

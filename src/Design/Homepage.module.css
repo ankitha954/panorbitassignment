@@ -1,11 +1,9 @@
-.HomeMain {
+.containerhome{
     display: flex;
     width: 95%;
     margin: auto;
     gap: 25px;
   }
-  
-  /* --------------- left navbar ----------- */
   .mainDiv {
     background: linear-gradient(180deg, #395bc8 0%, #5e3bc8 100%);
     width: 12%;
@@ -52,25 +50,23 @@
     font-size: 18px;
     letter-spacing: 1px;
   }
-  
-  /* ----------- Profile top ---------- */
-  .profile_top {
+  .homeprofile {
     width: 93%;
     padding: 0px 30px;
     margin-top: 30px;
   }
   
-  .profile_top > div {
+  .homeprofile > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .profile_top > div > h2 {
+  .homeprofile > div > h2 {
     color: rgba(39, 38, 38, 0.822);
   }
   
-  .profile {
+  .userprofile {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -79,7 +75,6 @@
   .profile > h2 {
     color: rgb(67, 65, 65);
   }
-  /* ---------------- Profile ----------- */
   .profile {
     display: flex;
     align-items: center;

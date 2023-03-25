@@ -8,18 +8,18 @@ const Gallery = () => {
   const { setShowProfile } = useContext(ContextApi); 
 
   return (
-    <div className={style.mainDiv}>
+    <div className={style.container}>
       
       <Sidebar />
-      <div className={style.topDiv}>
-        <div className={style.profile}>
+      <div className={style.sidesec}>
+        <div className={style.gallery}>
           <h2>Gallery</h2>
           <Header />
         </div>
 
         <hr style={{ color: "grey", width: "100%" }} />
 
-        <div className={style.screen} onClick={() => setShowProfile(false)}>
+        <div className={style.display} onClick={() => setShowProfile(false)}>
           <h1 className={style.ComingSoon}>Coming Soon</h1>
         </div>
       </div>

@@ -7,16 +7,16 @@ import style from "../Design/comingsoonpage.module.css"
 const Posts = () => {
   const { setShowProfile } = useContext(ContextApi); 
   return (
-    <div className={style.mainDiv}>
+    <div className={style.container}>
       <Sidebar />
-      <div className={style.topDiv}>
-        <div className={style.profile}>
+      <div className={style.sidesec}>
+        <div className={style.gallery}>
           <h2>Posts</h2>
           <Header/>
         </div>
 
         <hr style ={{ color: "grey", width: "100%" }} />
-        <div className={style.screen} onClick={() => setShowProfile(false)}>
+        <div className={style.display} onClick={() => setShowProfile(false)}>
           <h1 className={style.ComingSoon}>Coming Soon</h1>
         </div>
       </div>

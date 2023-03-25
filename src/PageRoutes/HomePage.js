@@ -4,13 +4,13 @@ import { useParams } from "react-router-dom";
 import Sidebar from "../Components/Sidebar";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import { AppContest } from "../contestApi/ContestProvider";
+import { ContextApi } from "../UserContext/ContextProvider";
 import style from "../Design/Homepage.module.css";
-import Header from "../Components/Header";
+
 
 const HomePage = () => {
   const { profileData, getFilterData, setShowProfile, showProfile } =
-    useContext(AppContest); 
+    useContext(ContextApi); 
   const { id } = useParams();
   sessionStorage.setItem("id", id);
 

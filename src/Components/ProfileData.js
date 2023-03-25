@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { ContextApi } from "../UserContext/ContextProvider";
-import style from "../css/getprofile.module.css";
+import style from "../Design/ProfileData.module.css";
 
-const profileData = () => {
+const ProfileData = () => {
   const { data, loading, error, getAllData } = useContext(ContextApi); 
 
   useEffect(() => {
@@ -38,4 +38,4 @@ const profileData = () => {
   );
 };
 
-export default profileData;
+export default ProfileData;

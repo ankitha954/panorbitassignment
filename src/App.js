@@ -1,6 +1,6 @@
 import "./App.css";
-import ContextProvider from "./useContext/ContextProvider";
-import DataRoutes from "./DFataRoutes/DataRoutes";
+import ContextProvider from "./UserContext/ContextProvider";
+import DataRoutes from "./DataRoutes/DataRoutes";
 
 function App() {
   return (

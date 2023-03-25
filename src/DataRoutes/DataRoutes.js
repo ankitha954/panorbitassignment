@@ -4,7 +4,7 @@ import Gallery from '../PageRoutes/Gallery'
 import HomePage from '../PageRoutes/HomePage'
 import LandingPage from '../PageRoutes/LandingPage'
 import Posts from '../PageRoutes/Posts'
-import Todo from '../PageRoutes/Todo'
+import ToDo from '../PageRoutes/ToDo'
 
 const DataRoutes = () => {
   return (
@@ -13,7 +13,7 @@ const DataRoutes = () => {
         <Route path="homepage/:id" element={<HomePage />} />
         <Route path="post" element={<Posts />} />
         <Route path="gallery" element={<Gallery />} />
-        <Route path="todo" element={<Todo />} />
+        <Route path="todo" element={<ToDo />} />
     </Routes>
   )
 }

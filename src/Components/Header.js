@@ -10,7 +10,7 @@ const Header = () => {
   useEffect(() => {
     const ID = sessionStorage.getItem("id") || 1;
     getFilterData(Number(ID));
-  }, []);
+  }, [getFilterData]);
 
   return (
     <div>

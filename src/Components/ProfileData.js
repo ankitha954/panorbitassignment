@@ -8,7 +8,7 @@ const ProfileData = () => {
 
   useEffect(() => {
     getAllData();
-  }, []);
+  }, [getAllData]);
 
   return (
     <div className={style.profilecontainer}>

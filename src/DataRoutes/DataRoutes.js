@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Gallery from '../page/Gallery'
-import HomePage from '../page/HomePage'
-import LandingPage from '../page/LandingPage'
-import Posts from '../page/Posts'
-import Todo from '../page/Todo'
+import Gallery from '../PageRoutes/Gallery'
+import HomePage from '../PageRoutes/HomePage'
+import LandingPage from '../PageRoutes/LandingPage'
+import Posts from '../PageRoutes/Posts'
+import Todo from '../PageRoutes/Todo'
 
-const AllRoutes = () => {
+const DataRoutes = () => {
   return (
     <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -18,4 +18,4 @@ const AllRoutes = () => {
   )
 }
 
-export default AllRoutes;
+export default DataRoutes;

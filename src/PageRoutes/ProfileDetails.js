@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import GetProfiles from "../components/GetProfiles";
-import { AppContest } from "../contestApi/ContestProvider";
-import style from "../css/profiledetails.module.css";
+import ProfileData from "../Components/ProfileData";
+import { ContextApi } from "../UserContext/ContextProvider";
+import style from "../Design/ProfileData.module.css";
 
 const ProfileDetails = () => {
-  const { profileData, setShowProfile, showProfile } = useContext(AppContest); // getting data from contest api
+  const { profileData, setShowProfile, showProfile } = useContext(ContextApi); 
 
   const handleClick = () => {
     setShowProfile(false);
@@ -23,12 +23,11 @@ const ProfileDetails = () => {
         <p>{profileData[0]?.email}</p>
       </div>
       <hr />
-      {/* ------- get profile ---- */}
+     
       <div className={style.getProfile} onClick={() => setShowProfile(false)}>
-        <GetProfiles />
+        <ProfileData />
       </div>
 
-      {/* -------(LogOut)------ */}
       <Link to="/">
         <button onClick={handleClick} className={style.signout_button}>
           Sign out

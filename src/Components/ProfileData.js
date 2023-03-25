@@ -4,31 +4,24 @@ import { ContextApi } from "../UserContext/ContextProvider";
 import style from "../Design/ProfileData.module.css";
 
 const ProfileData = () => {
-  const { data, loading, error, getAllData } = useContext(ContextApi); 
+  const { data, getAllData } = useContext(ContextApi); 
 
   useEffect(() => {
     getAllData();
   }, []);
 
-  if (loading) {
-    return <h3 style={{ color: "teal" }}>Loading....</h3>;
-  }
-  if (error) {
-    return <h3 style={{ color: "red" }}>server error....</h3>;
-  }
-
   return (
-    <div className={style.card_bottom}>
+    <div className={style.profilecontainer}>
     
       {data &&
-        data.map((el) => (
-          <div key={el.id}>
+        data.map((element) => (
+          <div key={element.id}>
             <NavLink
-              to={`/homepage/${el.id}`}
+              to={`/homepage/${element.id}`}
             >
-              <div className={style.maping_div}>
-                <img src={el.profilepicture} alt="profile image" />
-                <p>{el.name}</p>
+              <div className={style.profileimagecontainer}>
+                <img src={element.profilepicture} alt="profile image" />
+                <p>{element.name}</p>
               </div>
             </NavLink>
             <hr />

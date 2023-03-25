@@ -29,7 +29,7 @@ const ContextProvider = ({ children }) => {
   const getFilterData = (id) => {
     DataApi()
       .then((res) => {
-        setProfileData(res.data.users.filter((el) => el.id === Number(id)));
+        setProfileData(res.data.users.filter((element) => element.id === Number(id)));
       })
       .catch((e) => {
         console.log(e);

@@ -9,7 +9,7 @@ import style from "../Design/Homepage.module.css";
 
 
 const HomePage = () => {
-  const { profileData, getFilterData, setShowProfile, showProfile } =
+  const { profileData, getFilterData, setShowProfile } =
     useContext(ContextApi); 
   const { id } = useParams();
   sessionStorage.setItem("id", id);
@@ -24,11 +24,11 @@ const HomePage = () => {
       <div className={style.containerhome}>
         <Sidebar />
         {profileData &&
-          profileData.map((el) => (
+          profileData.map((element) => (
             <div
               style={{ width: "80%" }}
               className={style.homeprofile}
-              key={el.id}
+              key={element.id}
             >
               <div className={style.profile}>
                 <h2>Profile</h2>
@@ -37,7 +37,7 @@ const HomePage = () => {
 
               <hr />
               <div onClick={() => setShowProfile(false)}>
-                <Footer {...el} />
+                <Footer {...element} />
               </div>
             </div>
           ))}

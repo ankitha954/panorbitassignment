@@ -1,13 +1,13 @@
-.card_bottom {
+.profilecontainer {
     margin-top: 0px;
     padding: 0px 30px;
     height: 400px;
     overflow-x: auto;
-    background: #ffffff;
+    background: white;
     cursor: pointer;
   }
   
-  .maping_div {
+  .profileimagecontainer {
     display: flex;
     margin-top: 0px;
     align-items: center;
@@ -16,21 +16,21 @@
     padding: 0px;
   }
   
-  .maping_div > img {
+  .profileimagecontainer > img {
     border-radius: 50px;
     width: 35px;
     margin: 0px;
     padding: 0px;
   }
   
-  .maping_div > p {
+  .profileimagecontainer > p {
     font-weight: 400;
     font-size: 17px;
     margin: 0px;
     padding: 0px;
-    color: rgb(56, 53, 53);
+    color: #383535;
   }
-  .maping_div > p:hover {
+  .profileimagecontainer > p:hover {
     color: rgb(158, 56, 56);
   }
   
